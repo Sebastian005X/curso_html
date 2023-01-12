@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text fundaments</title>
+</head>
+<body>
+  <!--
+    En HTML los encabezados son dedes el <h1> hasta el <h6> cada uno representa un nivel en el
+    documento, siendo <h1> el encabezado principal, <h2> un subencabezado, <h3> un 
+    sub-subencabezado y asi con los demas. Haciendo haci una jerarquia (el <h1> solo se puede
+    usar una vez por paginas).
+  -->
+  <!--Estructura jerarquica-->
+  <h1>Animales</h1>
+  <p>por Sebastian</p>
+  
+  <h2>capitulo 1</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos temporibus reprehenderit at, dolore amet similique, ullam magni, minima sequi excepturi qui. Corrupti quasi nam voluptatibus aperiam? Ipsum doloremque odio repellat.</p>
+
+  <h2>capitulo 2</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit culpa magni iure nulla id sint consequatur eius facere recusandae ipsa doloremque accusantium qui ut enim, esse similique illum, corrupti consectetur.</p>
+
+  <h3>Los vertebrados</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit dolore repudiandae culpa saepe, similique possimus pariatur numquam ea incidunt neque veniam inventore aperiam sequi facere enim nulla sed fuga.</p>
+  <hr/>
+  <!--
+    El <h1> representa el titulo de la historia, el <h2> representa el titulo de cada
+    capitulo y el h3 representa sub secciones de cada capitulo.
+  -->
+
+  <!--Listas-->
+  <!--
+    Lista desaordenada
+    es una lista en la cual el orden de los elementos no importa como en una lista de mercado.
+  -->
+  <ul>
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Bread</li>
+  </ul>
+
+  <!--
+    Lista ordenada
+    es una lista en la cual el orden si importa como en un top de mejores peliculas de este año.
+  -->
+  <ol>
+    <li>Avatar 2</li>
+    <li>Black Adam</li>
+    <li>Transformers</li>
+  </ol>
+
+  <!--lista anidada-->
+  <ol>
+    <li>run</li>
+    <li>
+      Do?
+      <ul>
+        <li>Walk</li>
+        <li>watch Tv</li>
+      </ul>
+    </li>
+    <li>Eat fish</li>
+  </ol>
+  <hr/>
+
+  <!--
+    Enfacis y importancia.
+
+    se usa para darle un sentido a cierta palabra o frase.
+
+    Para  hacer enfasis en una palabra usamos el elemento <em> que le da un estilo italico, pero
+    para solo darle el estilo podemos escribir el elemento <i> en ves del elemento <em>, o con un
+    span y le damos el estilo con css.
+    
+    Para darle peso o importancia a una palabra usamos <strong>, que la mostrara en negrita y le
+    dira al navegador y a los motores de busqueda que es una palabra importante. Pero para solo
+    darle estilo podemos usar el elemento <b> o <span> con css.
+    
+    Con los elementos <i>, <b> y <u> no se recomiendan usar. En cambio es mejor usar el
+    elemento <span> con css.   
+  -->
+  <p>I am <em>glad</em> you weren't <em>late</em>.</p>
+  <p>I am <strong>not lawyer</strong>.</p>
+</body>
+</html>

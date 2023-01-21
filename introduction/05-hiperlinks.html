@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating hyperlinks</title>
+</head>
+
+<body>
+  <!--
+    Los hiperlinks, permiten que las paginas web puedan apuntar a otras, yas sean archivos html
+    o recursos externos. Tambien pueden apuntar a una sección en concreto de mi pagina.
+
+    Los hiperlinks se crean envolviendo texto o otro contenido, dentro de un elemento '<a>' y con
+    su atributo href, que es donde se dirigira cuando le demos clic.
+
+    El atributo title me permite dar mas información sobre el tipo de pagina a la cual me lleva. O
+    información sobre que encontara. Esto nos mostrara esta información cuando pasemos el mouse por
+    encima.
+  -->
+  <p>
+    View roadmap
+    <a href="https://roadmap.sh/" title="The best place to learn more about software">Here</a>
+  </p>
+
+  <!--Como mencione antes cualquier elemento puede ser un link, en este caso una imagen-->
+  <a href="https://www.facebook.com/">
+    <img width="300" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="icon facebook" />
+  </a>
+
+  <!--
+    Nosotros tambien podremos dirigir links a archivos de nuestro sistema de archivos, seria 
+    igual que con rutas externas solo que tendriamos que coocar el nombre del archivo. 
+  -->
+  <!--Para un archivo que este en su mismo directorio-->
+  <p>
+    <a href="contacts.html">Contacts</a>
+  </p>
+  <!--para un archivo localizado en un subdirectorio-->
+  <p>
+    <a href="./pages/book.html">Book</a>
+  </p>
+  <!--Para un archivo ubicado en un punto atras de nuestro directorio actual-->
+  <p>
+    <a href="../about.html">About</a>
+  </p>
+  <!--
+    Se pueden combinar multiples instancias mas complejas, algo haci:  
+    ../../../complex/path/to/my/file.html.
+  -->
+  <hr>
+
+  <h1>Content table</h1>
+
+  <!--
+    Tambien podemos ir a partes especificas de nuestra pagina dandole un atributo id a un elemento, y luego referenciando su 
+    id en un elemento a con el atributo href. Ejemplo.
+
+    <h2 id="chapter-2">Chapter 2</h2> "creamos el elemento con el id"
+
+    "luego con un elemento '<a>' hacemos referencia a su id en el atributo href empezando el id con un signo de numeral (#)"
+
+    <a href="#chapter-2">go to chapter 2</a>
+
+    Esto nos deberia enviar hacia esa sección de nuestra pagina.
+
+    Tambien se puede ir a cierta sección de otra pagina solo hay que colocar el nombre deñ id de la sección al final de
+    la url.
+
+    <a href="contact.html#about-us">About AS</a>
+
+    <a 
+    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks
+    #a_quick_primer_on_urls_and_paths">go to tutorial MDN</a>
+  -->
+
+  <ul>
+    <li><a href="#what-is">what is?</a></li>
+    <li><a href="#how-work">how work?</a></li>
+    <li><a href="#summary">summary</a></li>
+  </ul>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo praesentium amet quidem veniam ab temporibus quae
+      odit neque vitae ducimus, commodi dolorem non facere eum adipisci nisi, magni incidunt debitis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+
+    <h2 id="what-is">what is?</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+
+    <h2 id="how-work">how work?</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+
+    <h2 id="summary">summary</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quae impedit reprehenderit nobis rerum nesciunt
+      voluptate vel aperiam ut, neque pariatur sunt sed animi itaque ad assumenda quo ducimus et.
+      Ex placeat consectetur numquam dolorum incidunt, eius nesciunt magnam id perspiciatis adipisci ab consequatur eum
+      eveniet exercitationem veritatis, voluptatem sequi illum quibusdam blanditiis error pariatur nobis deserunt
+      obcaecati. Minus, quasi!
+      Adipisci quisquam iste ut iure at dolor iusto sapiente enim excepturi nesciunt deleniti ipsam maxime consectetur
+      ipsum dicta nemo totam minus delectus, officiis hic incidunt, culpa saepe nisi. Voluptate, beatae?
+      Sed, numquam. Libero explicabo voluptatum facere neque enim. Harum illum perspiciatis, iusto quam fugiat eligendi
+      vel necessitatibus animi repudiandae et voluptates, excepturi quis ad, earum accusantium aperiam doloribus eaque
+      fuga.
+      Minima voluptatum animi nesciunt deserunt perspiciatis. Facere saepe odio laudantium nostrum quas est veritatis
+      quis sit numquam, animi perferendis, voluptatibus, nemo enim quod harum consequatur praesentium beatae
+      reprehenderit illum exercitationem?</p>
+  </div>
+
+  <!--
+    En el desarrollo web existen urls abosultas y relativas.
+
+    Urls abosolutas: estas rutas muestran información extra como el protocolo y el dominio, tambien matienen el nombre del
+    dominio en cada sublink. Ejemplo:
+
+    https:www.example.com/contact
+
+    en el ejemplo de arriba example es el index y contact es un sublink.
+    *****************************************************************************************
+
+    Urls Relativas: Estas no contienen información extra, solo el nombre del archivo. Ejemplo:
+
+    index.html o contact.html, basicamente cambia la url por el archivo que fue enlazado.
+  -->
+
+  <!--
+    Alugons consejos para escribir links con buenas practicas serian:
+
+    # Usar palabras descriptivas para que el usuario sepa que le mostrara ese link o a donde lo llevara.
+    # Mantener el texto lo mas corto posible.
+    # Tener un estilo unico para que el usuario sepa que eso es un link.
+    # Usar el atributo download para descargar archivos
+    # Usar el atributo target con el valor "_blank" para que se abra una nueva ventana con la pagina linkeada
+  -->
+
+  <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+    download="firefox-latest-64bit-installer.exe">
+    Download Latest Firefox for Windows (64-bit) (English, US)
+  </a>
+  <br>
+  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#a_quick_primer_on_urls_and_paths">Mdn</a>
+
+  <!--
+    Tambien podemos crear un link que abrira, la aplicación para enviar correos, a cierta dirección de correo electronico.
+    Esto se hace con el atributo 'mailto:<dirección de correo electronico>'
+  -->
+  <br>
+  <a href="mailto:sebasgamercz123@gmail.com">Correo</a>
+</body>
+
+</html>

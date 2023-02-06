@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura del Documento y del sitio web</title>
+</head>
+<body>
+  <!--
+    Html tiene elementos que me representan textos como encabezados o parrafos. Ademas de esto
+    Html provee de elementos en bloque semanticos, que definen un area en especifico de mi pagina. Como
+    un header, navbar o main content.
+
+    Header (Encabezamiento):
+      El header me define un area la cual se encuentra usualmente en la parte superior de la pagina. 
+      Generalmente se matiene igual en el resto de pagina y. Puede contener el titulo del sitio web o 
+      un logo, formulario de busqueda, un nombre de autor o un eslogan, funcionando como un punto de 
+      referencia el sitio web. Pero tambien puede estar contenido dentro de otros elementos semanticos como 
+      <article>, <aside>, <main>, <nav>, o <section>. Cuando esta contenido en cualquiera de estos elementos 
+      no es consierado un punto de referencia, en estos casos se podria usar como el encabezado de un 
+      articulo o post, que me contenga el titulo, la fecha de publicación y otra información como su categoria.
+      
+      Se representa con el elemento '<header>'.
+
+    
+    Navigation bar (barra de navegación):
+      Enlaza las principales secciones de mi pagina y al igual que el header se matiene consitente en las otras,
+      secciones del sitio web. Los enlaces son representados con botones, links o ventanas. El header
+      puede estar contenido dentro del header. Pero no es necesario, ademas tener a los dos por separados es mejor
+      para la accesiblidad.
+
+      Se representa con el elemento '<nav>'.
+    
+
+    Main content (contenido principal):
+      Es un area grande en el centro de la pantalla, el cual me muestra el contenido principal de la pagina, es 
+      decir el contenido del cual trata el documento, por ejemplo la noticia que yo quiero que el usuario lea,
+      el video que quiero que vea. Este contenido principal puede variar en las diferentes paginas.
+
+      Se representa con el elemento '<main>'.
+
+
+    Sidebar (barra lateral):
+      es una barra que se ubica a un lateral de el sitio web, contiene alguna información pereférica, links, citas,
+      ads, etc. esto información contextual, es decir información relacionada con el contenido pricipal. Por ejemplo
+      la sidebar de una pagina de noticias, podria tener información del autor de la noticia o enlaces a otras 
+      noticias relacionadas.
+
+      Se representa con el elemento '<aside>'.
+    
+    Footer (pie de pagina):
+      Se encuantra al final del documento y puede funcionar como el pie de pagina de el documento o de una sección.
+      Este puede contener informacíon del author (se puede usar el elemento <address>), información de copyright,
+      mapa del sitio web, enlace para regresar a la zona superior del documento y documentos relacionados.
+      
+      Se representa con el elemento '<footer>'
+  -->
+
+  <h1>Page structure</h1>
+
+  <img 
+    src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/sample-website.png" 
+    alt="page estruture"
+    width="500"
+  >
+  <!--
+    Existen otros elementos de bloque semanticos, que se usan para hacer secciones.
+
+    <article>:
+      Son articulos con contenido independiente y autónomo al resto de la pagina. Un articulo debe tener sentido por
+      si mismo y deberia ser posible distribuirlo por el resto de la pagina. Por ejemplo podria ser un post de un foro,
+      un post de un blog o una noticia y los articulos se pueden reutilizar. 
+  -->
+  <div>
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+      </article>
+      
+      <article>
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+      </article>
+      
+      <article>
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+      </article>
+  </div>
+
+  <!--
+    <section>:
+      Es un elemento semantico para crear secciones independientes en una pagina. Estas secciones deben estar relacionadas
+      con el contenido. Ademas no son reutilizables. Tambien pueden contener elementos <artcle> o al reves. Es recomendable
+  -->
+  <hr>
+  <div>
+    <section>
+      <h2>The best linux distro based in ubuntu</h2>
+      <article>
+        <h3>Zorin OS</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, magnam quod veritatis aut maiores exercitationem hic, atque facere dignissimos, fuga excepturi libero ipsam quidem quia minus error nihil fugit!</p>
+      </article>
+      <article>
+        <h3>Xubuntu</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, magnam quod veritatis aut maiores exercitationem hic, atque facere dignissimos, fuga excepturi libero ipsam quidem quia minus error nihil fugit!</p>
+      </article>
+      <article>
+        <h3>linux Mint</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, magnam quod veritatis aut maiores exercitationem hic, atque facere dignissimos, fuga excepturi libero ipsam quidem quia minus error nihil fugit!</p>
+      </article>
+    </section>
+  </div>
+  <hr>
+  <div>
+    <article>
+      <h2>The best films</h2>
+      <article>
+        <header>
+          <h3>Top gun maverick</h3>
+          <time datetime="2022">2022</time>
+        </header>
+        <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores vero dolore nulla, ratione veniam enim velit esse consectetur ipsam, assumenda consequuntur pariatur suscipit aperiam, expedita nesciunt et magni fugit.</p>
+        </section>
+        <section>
+          <h3>Information: </h3>
+          <ul>
+            <li>Rate: 5</li>
+            <li>Director: Tom Cruise</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>Avatar 2</h3>
+          <time datetime="2022">2022</time>
+        </header>
+        <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores vero dolore nulla, ratione veniam enim velit esse consectetur ipsam, assumenda consequuntur pariatur suscipit aperiam, expedita nesciunt et magni fugit.</p>
+        </section>
+        <section>
+          <h3>Information: </h3>
+          <ul>
+            <li>Rate: 4.5</li>
+            <li>Director: James Cameron</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>Transformers</h3>
+          <time datetime="2007">2007</time>
+        </header>
+        <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores vero dolore nulla, ratione veniam enim velit esse consectetur ipsam, assumenda consequuntur pariatur suscipit aperiam, expedita nesciunt et magni fugit.</p>
+        </section>
+        <section>
+          <h3>Information: </h3>
+          <ul>
+            <li>Rate: 4</li>
+            <li>Director: Michael Bay</li>
+          </ul>
+        </section>
+      </article>
+    </article>
+  </div>
+
+  <!--
+    Tambien hay elementos no semanticos que se usan para dar estilo a la pagina, o escribir algo que no queramos que tenga
+    significado en el documento.
+
+    <span>:
+      Es un elemento semantico en linea usado generalmente en textos.
+    
+    <div>:
+      Es un elemento semantico en bloque usado para agrupar contenido.
+    
+    <br>:
+      Se usa para dar saltos de linea a un parrafo, por ejemplo para hacer un poema.
+    
+    <hr>:
+      Crea una raya horizontal que denota el cambio tematico en el texto. Por ejemplo un cambio de tema o de 
+      escena
+  -->
+</body>
+</html>
